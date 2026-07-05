@@ -1,0 +1,472 @@
+2026-07-04 20:23:14 - Starting UsuariosApplication using Java 21.0.11 with PID 24320 (C:\Users\Diego\Desktop\INGENIERIA DE SOFWARE\usuarios\target\classes started by Diego in C:\Users\Diego\Desktop\INGENIERIA DE SOFWARE\usuarios)
+2026-07-04 20:23:14 - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 20:23:15 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 20:23:16 - Finished Spring Data repository scanning in 119 ms. Found 2 JPA repository interfaces.
+2026-07-04 20:23:16 - BeanFactory id=ba26661e-2ca5-3c5b-81ea-196b3a1d03ea
+2026-07-04 20:23:16 - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-07-04 20:23:16 - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-07-04 20:23:17 - Tomcat initialized with port 9002 (http)
+2026-07-04 20:23:17 - Starting service [Tomcat]
+2026-07-04 20:23:17 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-04 20:23:17 - Initializing Spring embedded WebApplicationContext
+2026-07-04 20:23:17 - Root WebApplicationContext: initialization completed in 2360 ms
+2026-07-04 20:23:17 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 20:23:17 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-04 20:23:17 - HHH000026: Second-level cache disabled
+2026-07-04 20:23:18 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 20:23:18 - HikariPool-1 - Starting...
+2026-07-04 20:23:18 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72406594
+2026-07-04 20:23:18 - HikariPool-1 - Start completed.
+2026-07-04 20:23:18 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-04 20:24:12 - Starting UsuariosApplication using Java 21.0.11 with PID 21420 (C:\Users\Diego\Desktop\INGENIERIA DE SOFWARE\usuarios\target\classes started by Diego in c:\Users\Diego\Desktop\INGENIERIA DE SOFWARE\usuarios)
+2026-07-04 20:24:12 - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 20:24:13 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 20:24:14 - Finished Spring Data repository scanning in 109 ms. Found 2 JPA repository interfaces.
+2026-07-04 20:24:14 - BeanFactory id=ba26661e-2ca5-3c5b-81ea-196b3a1d03ea
+2026-07-04 20:24:14 - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-07-04 20:24:14 - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-07-04 20:24:14 - Tomcat initialized with port 9002 (http)
+2026-07-04 20:24:14 - Starting service [Tomcat]
+2026-07-04 20:24:14 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-04 20:24:15 - Initializing Spring embedded WebApplicationContext
+2026-07-04 20:24:15 - Root WebApplicationContext: initialization completed in 2132 ms
+2026-07-04 20:24:15 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 20:24:15 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-04 20:24:15 - HHH000026: Second-level cache disabled
+2026-07-04 20:24:15 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 20:24:15 - HikariPool-1 - Starting...
+2026-07-04 20:24:17 - HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:290)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at colegio.usuarios.UsuariosApplication.main(UsuariosApplication.java:12)
+2026-07-04 20:24:17 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-04 20:24:17 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 20:24:17 - HikariPool-1 - Starting...
+2026-07-04 20:24:18 - SQL Error: 1049, SQLState: 42000
+2026-07-04 20:24:18 - Unknown database 'libro_usuarios'
+2026-07-04 20:24:18 - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'libro_usuarios'] [n/a]
+2026-07-04 20:24:18 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'libro_usuarios'] [n/a]
+2026-07-04 20:24:18 - Stopping service [Tomcat]
+2026-07-04 20:24:18 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-04 20:24:19 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'libro_usuarios'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at colegio.usuarios.UsuariosApplication.main(UsuariosApplication.java:12)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'libro_usuarios'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 15 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'libro_usuarios'] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 19 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'libro_usuarios'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:437)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 40 common frames omitted
+2026-07-04 20:24:37 - Starting UsuariosApplication using Java 21.0.11 with PID 19648 (C:\Users\Diego\Desktop\INGENIERIA DE SOFWARE\usuarios\target\classes started by Diego in c:\Users\Diego\Desktop\INGENIERIA DE SOFWARE\usuarios)
+2026-07-04 20:24:37 - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 20:24:38 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 20:24:38 - Finished Spring Data repository scanning in 112 ms. Found 2 JPA repository interfaces.
+2026-07-04 20:24:38 - BeanFactory id=ba26661e-2ca5-3c5b-81ea-196b3a1d03ea
+2026-07-04 20:24:39 - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-07-04 20:24:39 - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-07-04 20:24:39 - Tomcat initialized with port 9002 (http)
+2026-07-04 20:24:39 - Starting service [Tomcat]
+2026-07-04 20:24:39 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-04 20:24:39 - Initializing Spring embedded WebApplicationContext
+2026-07-04 20:24:39 - Root WebApplicationContext: initialization completed in 2126 ms
+2026-07-04 20:24:40 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 20:24:40 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-04 20:24:40 - HHH000026: Second-level cache disabled
+2026-07-04 20:24:40 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 20:24:40 - HikariPool-1 - Starting...
+2026-07-04 20:24:41 - HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:290)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at colegio.usuarios.UsuariosApplication.main(UsuariosApplication.java:12)
+2026-07-04 20:24:41 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-04 20:24:42 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 20:24:42 - HikariPool-1 - Starting...
+2026-07-04 20:24:43 - SQL Error: 1049, SQLState: 42000
+2026-07-04 20:24:43 - Unknown database 'libro_usuarios'
+2026-07-04 20:24:43 - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'libro_usuarios'] [n/a]
+2026-07-04 20:24:43 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'libro_usuarios'] [n/a]
+2026-07-04 20:24:43 - Stopping service [Tomcat]
+2026-07-04 20:24:43 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-04 20:24:43 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'libro_usuarios'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at colegio.usuarios.UsuariosApplication.main(UsuariosApplication.java:12)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'libro_usuarios'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 15 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'libro_usuarios'] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 19 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'libro_usuarios'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:437)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 40 common frames omitted
+2026-07-04 20:25:17 - Starting UsuariosApplication using Java 21.0.11 with PID 22244 (C:\Users\Diego\Desktop\INGENIERIA DE SOFWARE\usuarios\target\classes started by Diego in c:\Users\Diego\Desktop\INGENIERIA DE SOFWARE\usuarios)
+2026-07-04 20:25:17 - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 20:25:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 20:25:19 - Finished Spring Data repository scanning in 102 ms. Found 2 JPA repository interfaces.
+2026-07-04 20:25:19 - BeanFactory id=ba26661e-2ca5-3c5b-81ea-196b3a1d03ea
+2026-07-04 20:25:19 - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-07-04 20:25:19 - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-07-04 20:25:19 - Tomcat initialized with port 9002 (http)
+2026-07-04 20:25:19 - Starting service [Tomcat]
+2026-07-04 20:25:19 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-04 20:25:20 - Initializing Spring embedded WebApplicationContext
+2026-07-04 20:25:20 - Root WebApplicationContext: initialization completed in 2141 ms
+2026-07-04 20:25:20 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 20:25:20 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-04 20:25:20 - HHH000026: Second-level cache disabled
+2026-07-04 20:25:20 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 20:25:20 - HikariPool-1 - Starting...
+2026-07-04 20:25:21 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35d8ba22
+2026-07-04 20:25:21 - HikariPool-1 - Start completed.
+2026-07-04 20:25:21 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-04 20:25:21 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 20:25:22 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 20:25:22 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 20:25:22 - 
+
+Using generated security password: b742548b-91e2-4431-a961-c7ae83bad5a8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-04 20:25:22 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-04 20:25:23 - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-04 20:25:23 - Eureka HTTP Client uses RestTemplate.
+2026-07-04 20:25:23 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-04 20:25:23 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-07-04 20:25:23 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 20:25:23 - HikariPool-1 - Shutdown initiated...
+2026-07-04 20:25:23 - HikariPool-1 - Shutdown completed.
+2026-07-04 20:25:23 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-04 20:25:23 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9002 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9002 or configure this application to listen on another port.
+
+2026-07-04 20:26:03 - Starting UsuariosApplication using Java 21.0.11 with PID 7040 (C:\Users\Diego\Desktop\INGENIERIA DE SOFWARE\usuarios\target\classes started by Diego in c:\Users\Diego\Desktop\INGENIERIA DE SOFWARE\usuarios)
+2026-07-04 20:26:03 - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 20:26:04 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 20:26:04 - Finished Spring Data repository scanning in 110 ms. Found 2 JPA repository interfaces.
+2026-07-04 20:26:05 - BeanFactory id=ba26661e-2ca5-3c5b-81ea-196b3a1d03ea
+2026-07-04 20:26:05 - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-07-04 20:26:05 - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-07-04 20:26:05 - Tomcat initialized with port 9002 (http)
+2026-07-04 20:26:05 - Starting service [Tomcat]
+2026-07-04 20:26:05 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-04 20:26:05 - Initializing Spring embedded WebApplicationContext
+2026-07-04 20:26:05 - Root WebApplicationContext: initialization completed in 2230 ms
+2026-07-04 20:26:06 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 20:26:06 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-04 20:26:06 - HHH000026: Second-level cache disabled
+2026-07-04 20:26:06 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 20:26:06 - HikariPool-1 - Starting...
+2026-07-04 20:26:07 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79ae3fb1
+2026-07-04 20:26:07 - HikariPool-1 - Start completed.
+2026-07-04 20:26:07 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-04 20:26:07 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 20:26:07 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 20:26:08 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 20:26:08 - 
+
+Using generated security password: 3e12a61a-fa0b-4e50-a0f2-1d5f6cfc3cc3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-04 20:26:08 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-04 20:26:09 - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-04 20:26:09 - Eureka HTTP Client uses RestTemplate.
+2026-07-04 20:26:09 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-04 20:26:09 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-07-04 20:26:09 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 20:26:09 - HikariPool-1 - Shutdown initiated...
+2026-07-04 20:26:09 - HikariPool-1 - Shutdown completed.
+2026-07-04 20:26:09 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-04 20:26:09 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9002 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9002 or configure this application to listen on another port.
+
+2026-07-04 20:29:41 - Starting UsuariosApplication using Java 21.0.11 with PID 5740 (C:\Users\Diego\Desktop\INGENIERIA DE SOFWARE\usuarios\target\classes started by Diego in C:\Users\Diego\Desktop\INGENIERIA DE SOFWARE\usuarios)
+2026-07-04 20:29:41 - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 20:29:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 20:29:42 - Finished Spring Data repository scanning in 112 ms. Found 2 JPA repository interfaces.
+2026-07-04 20:29:42 - BeanFactory id=79766111-03da-3c5d-ad7a-c737df36dd14
+2026-07-04 20:29:43 - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-07-04 20:29:43 - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-07-04 20:29:43 - Tomcat initialized with port 9002 (http)
+2026-07-04 20:29:43 - Starting service [Tomcat]
+2026-07-04 20:29:43 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-04 20:29:43 - Initializing Spring embedded WebApplicationContext
+2026-07-04 20:29:43 - Root WebApplicationContext: initialization completed in 2207 ms
+2026-07-04 20:29:43 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 20:29:43 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-04 20:29:43 - HHH000026: Second-level cache disabled
+2026-07-04 20:29:44 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 20:29:44 - HikariPool-1 - Starting...
+2026-07-04 20:29:44 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31f5ffb9
+2026-07-04 20:29:44 - HikariPool-1 - Start completed.
+2026-07-04 20:29:44 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-04 20:29:45 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 20:29:45 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 20:29:45 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 20:29:45 - 
+
+Using generated security password: 4673024a-5a15-44c9-818f-d7b5acb8168a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-04 20:29:45 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-04 20:29:46 - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-04 20:29:47 - Eureka HTTP Client uses RestTemplate.
+2026-07-04 20:29:47 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-04 20:29:47 - Tomcat started on port 9002 (http) with context path '/'
+2026-07-04 20:29:47 - Started UsuariosApplication in 6.467 seconds (process running for 6.976)
+2026-07-04 20:32:28 - Starting UsuariosApplication using Java 21.0.11 with PID 5032 (C:\Users\Diego\Desktop\INGENIERIA DE SOFWARE\usuarios\target\classes started by Diego in c:\Users\Diego\Desktop\INGENIERIA DE SOFWARE\usuarios)
+2026-07-04 20:32:28 - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 20:32:29 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 20:32:30 - Finished Spring Data repository scanning in 116 ms. Found 2 JPA repository interfaces.
+2026-07-04 20:32:30 - BeanFactory id=79766111-03da-3c5d-ad7a-c737df36dd14
+2026-07-04 20:32:30 - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-07-04 20:32:30 - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-07-04 20:32:30 - Tomcat initialized with port 9002 (http)
+2026-07-04 20:32:30 - Starting service [Tomcat]
+2026-07-04 20:32:30 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-04 20:32:30 - Initializing Spring embedded WebApplicationContext
+2026-07-04 20:32:30 - Root WebApplicationContext: initialization completed in 2247 ms
+2026-07-04 20:32:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 20:32:31 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-04 20:32:31 - HHH000026: Second-level cache disabled
+2026-07-04 20:32:31 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 20:32:31 - HikariPool-1 - Starting...
+2026-07-04 20:32:32 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a9040f0
+2026-07-04 20:32:32 - HikariPool-1 - Start completed.
+2026-07-04 20:32:32 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-04 20:32:32 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 20:32:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 20:32:33 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 20:32:33 - 
+
+Using generated security password: c3389e00-f271-4f13-9afd-f6e3bee68beb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-04 20:32:33 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-04 20:32:33 - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-04 20:32:34 - Eureka HTTP Client uses RestTemplate.
+2026-07-04 20:32:34 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-04 20:32:34 - Tomcat started on port 9002 (http) with context path '/'
+2026-07-04 20:32:34 - Started UsuariosApplication in 6.396 seconds (process running for 6.955)

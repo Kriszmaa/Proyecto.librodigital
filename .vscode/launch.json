@@ -19,6 +19,17 @@
             "mainClass": "colegio.notas.NotasApplication",
             "projectName": "notas",
             "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=52526 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=notas"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-UsuariosApplication<usuarios>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "colegio.usuarios.UsuariosApplication",
+            "projectName": "usuarios",
+            "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
     ]
