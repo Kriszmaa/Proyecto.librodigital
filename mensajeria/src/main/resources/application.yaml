@@ -1,3 +1,44 @@
 spring:
   application:
     name: mensajeria
+  datasource:
+    url: jdbc:mysql://localhost:3306/libro_mensajeria
+    username: root
+    password: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+  codec:
+    max-in-memory-size: 2MB
+
+server:
+  port: 9003
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
+    
+logging:   
+  level:
+    root: INFO
+    colegio.mensajeria: DEBUG
+    org.springframework.web.reactive.function.client.WebClient: DEBUG
+  file:
+    name: logs/mensajeria-service.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui/index.html

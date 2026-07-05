@@ -1,8 +1,8 @@
 spring:
   application:
-    name: notas
+    name: notas # Cambiado para identificar este microservicio en Eureka
   datasource:
-    url: jdbc:mysql://localhost:3306/libro_notas
+    url: jdbc:mysql://localhost:3306/libro_usuarios
     username: root
     password: 
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -10,26 +10,27 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQLDialect
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+  
   codec:
-    max-in-memory-size: 2MB
+    max-in-memory-size: 2MB 
 
 server:
-  port: 9002
+  port: 9002 
 
 eureka:
   client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-    register-with-eureka: false
-    fetch-registry: false
+    enabled: false
     
 logging:   
   level:
     root: INFO
-    colegio.notas: DEBUG
-    org.springframework.web.reactive.function.client.WebClient: DEBUG
+    com.proyecto.notas: DEBUG 
+    org.springframework.web.reactive.function.client.WebClient: DEBUG 
   file:
-    name: logs/notas-service.log
+    name: logs/notas-service.log 
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
     file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
